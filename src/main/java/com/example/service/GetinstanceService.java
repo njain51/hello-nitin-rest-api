@@ -24,6 +24,8 @@ If the hostname environment variable is not present, then we are, by default, re
      private final static String DEFAULT_ENV_INSTANCE = "LOCAL";
 
      @Value("${" + HOST_NAME + ":" + DEFAULT_ENV_INSTANCE + "}") // it will return HOSTNAME or it will return  DEFAULT_ENV_INSTANCE if HOSTNAME is null.
+     // check here: https://www.baeldung.com/spring-value-annotation
+     //
      private String hostName;
 
      public String retriveInstanceOfInfo(){
